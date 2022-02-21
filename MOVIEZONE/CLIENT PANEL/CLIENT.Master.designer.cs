@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MOVIEZONE.CLIENT_SIDE
+namespace MOVIEZONE.CLIENT_PANEL
 {
 
 

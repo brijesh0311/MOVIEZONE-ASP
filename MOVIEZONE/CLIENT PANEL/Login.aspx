@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CLIENT SIDE/CLIENT.Master" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="MOVIEZONE.CLIENT_SIDE.WebForm5" %>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CLIENT PANEL/CLIENT.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="MOVIEZONE.CLIENT_PANEL.WebForm1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <!-- main-area -->
+    <!-- main-area -->
         <main>
 
             <!-- breadcrumb-area -->
@@ -54,7 +54,6 @@
             <!-- newsletter-area-end -->
 
         </main>
-        <!-- main-area-end -->
-
+    <!-- main-area-end -->
 
 </asp:Content>

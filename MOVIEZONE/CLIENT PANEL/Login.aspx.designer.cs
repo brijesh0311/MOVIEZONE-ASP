@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace MOVIEZONE.CLIENT_SIDE
+namespace MOVIEZONE.CLIENT_PANEL
 {
-    public partial class WebForm4
+    public partial class WebForm1
     {
     }
 }

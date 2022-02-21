@@ -1,10 +1,10 @@
-﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CLIENT.master.cs" Inherits="MOVIEZONE.CLIENT_SIDE.CLIENT" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CLIENT.master.cs" Inherits="MOVIEZONE.CLIENT_PANEL.CLIENT" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-        <meta charset="utf-8">
+    <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Movie Zone - Online Movies & TV Shows Template</title>
         <meta name="description" content="">
@@ -46,6 +46,8 @@
             </button>
         <!-- Scroll-top-end-->
 
+
+        
         <!-- header-area -->
         <header class="header-style-two">
             <div class="header-top-wrap">
@@ -167,7 +169,7 @@
         <!-- Content Area Start -->
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-
+         
         <!-- Content Area End -->
 
         <!-- Footer Area Start -->
@@ -267,7 +269,10 @@
         <script src="SRC/js/main.js"></script>
 
 
-
-    
+    <%--<form id="form1" runat="server">
+        <div>
+            
+        </div>
+    </form>--%>
 </body>
 </html>
