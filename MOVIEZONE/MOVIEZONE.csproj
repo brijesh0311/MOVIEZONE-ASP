@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CLIENT SIDE\header.aspx" />
     <Content Include="CLIENT SIDE\SRC\css\animate.min.css" />
     <Content Include="CLIENT SIDE\SRC\css\aos.css" />
     <Content Include="CLIENT SIDE\SRC\css\bootstrap.min.css" />
@@ -184,10 +183,8 @@
     <Content Include="CLIENT SIDE\SRC\js\slick.min.js" />
     <Content Include="CLIENT SIDE\SRC\js\vendor\jquery-3.6.0.min.js" />
     <Content Include="CLIENT SIDE\SRC\js\wow.min.js" />
-    <Content Include="CLIENT SIDE\footer.aspx" />
     <Content Include="CLIENT SIDE\Login.aspx" />
     <Content Include="CLIENT SIDE\SignIn.aspx" />
-    <Content Include="CLIENT SIDE\WebForm5.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -197,20 +194,6 @@
     </Compile>
     <Compile Include="CLIENT SIDE\CLIENT.Master.designer.cs">
       <DependentUpon>CLIENT.Master</DependentUpon>
-    </Compile>
-    <Compile Include="CLIENT SIDE\footer.aspx.cs">
-      <DependentUpon>footer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CLIENT SIDE\footer.aspx.designer.cs">
-      <DependentUpon>footer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CLIENT SIDE\header.aspx.cs">
-      <DependentUpon>header.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CLIENT SIDE\header.aspx.designer.cs">
-      <DependentUpon>header.aspx</DependentUpon>
     </Compile>
     <Compile Include="CLIENT SIDE\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -225,13 +208,6 @@
     </Compile>
     <Compile Include="CLIENT SIDE\SignIn.aspx.designer.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CLIENT SIDE\WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CLIENT SIDE\WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
