@@ -1,0 +1,309 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA11C974-4C40-4BF1-9993-ED5B1EA20D89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MOVIEZONE</RootNamespace>
+    <AssemblyName>MOVIEZONE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44375</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CLIENT SIDE\header.aspx" />
+    <Content Include="CLIENT SIDE\SRC\css\animate.min.css" />
+    <Content Include="CLIENT SIDE\SRC\css\aos.css" />
+    <Content Include="CLIENT SIDE\SRC\css\bootstrap.min.css" />
+    <Content Include="CLIENT SIDE\SRC\css\default.css" />
+    <Content Include="CLIENT SIDE\SRC\css\flaticon.css" />
+    <Content Include="CLIENT SIDE\SRC\css\fontawesome-all.min.css" />
+    <Content Include="CLIENT SIDE\SRC\css\magnific-popup.css" />
+    <Content Include="CLIENT SIDE\SRC\css\odometer.css" />
+    <Content Include="CLIENT SIDE\SRC\css\owl.carousel.min.css" />
+    <Content Include="CLIENT SIDE\SRC\css\owl.video.play.html" />
+    <Content Include="CLIENT SIDE\SRC\css\responsive.css" />
+    <Content Include="CLIENT SIDE\SRC\css\slick.css" />
+    <Content Include="CLIENT SIDE\SRC\css\style.css" />
+    <Content Include="CLIENT SIDE\SRC\fonts\download.svg" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400.svg" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400.svg" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900.svg" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticon.svg" />
+    <Content Include="CLIENT SIDE\SRC\img\banner\banner_bg01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\banner\slider_img01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\banner\slider_img02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\banner\slider_img03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\banner\s_slider_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\blog_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\breadcrumb_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\contact_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\episode_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\footer_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\gallery_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\header_bottom_shape.png" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\live_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\map.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\movie_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\movie_details_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\newsletter_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\pricing_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\services_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\services_bg02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\tr_movies_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\tv_series_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\tv_series_bg02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\ucm_bg.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\ucm_bg02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\bg\ucm_bg_shape.png" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\blog_details_img01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\blog_details_img02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\blog_thumb01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\blog_thumb02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\blog_thumb03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\comment_avatar01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\comment_avatar02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\post_avatar_img.png" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\rc_post_thumb01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\rc_post_thumb02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\blog\rc_post_thumb03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\favicon.png" />
+    <Content Include="CLIENT SIDE\SRC\img\images\card_img.png" />
+    <Content Include="CLIENT SIDE\SRC\img\images\episode_img.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\gallery_01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\gallery_02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\gallery_03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\gallery_04.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\live_img.png" />
+    <Content Include="CLIENT SIDE\SRC\img\images\nw_selarw.png" />
+    <Content Include="CLIENT SIDE\SRC\img\images\play_icon.png" />
+    <Content Include="CLIENT SIDE\SRC\img\images\services_img.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\services_img02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\images\title_shape.png" />
+    <Content Include="CLIENT SIDE\SRC\img\logo\logo.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\movie_details_img.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster04.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster05.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster06.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster07.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster08.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster09.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster10.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster11.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster12.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster13.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster14.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster15.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster16.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster17.png" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster18.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster19.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\s_ucm_poster20.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster01.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster02.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster03.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster04.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster05.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster06.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster07.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster08.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster09.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\poster\ucm_poster10.jpg" />
+    <Content Include="CLIENT SIDE\SRC\img\preloader.svg" />
+    <Content Include="CLIENT SIDE\SRC\js\ajax-form.js" />
+    <Content Include="CLIENT SIDE\SRC\js\aos.js" />
+    <Content Include="CLIENT SIDE\SRC\js\bootstrap.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\imagesloaded.pkgd.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\isotope.pkgd.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\jquery.appear.js" />
+    <Content Include="CLIENT SIDE\SRC\js\jquery.magnific-popup.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\jquery.odometer.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\main.js" />
+    <Content Include="CLIENT SIDE\SRC\js\owl.carousel.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\plugins.js" />
+    <Content Include="CLIENT SIDE\SRC\js\popper.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\slick.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\vendor\jquery-3.6.0.min.js" />
+    <Content Include="CLIENT SIDE\SRC\js\wow.min.js" />
+    <Content Include="CLIENT SIDE\footer.aspx" />
+    <Content Include="CLIENT SIDE\Login.aspx" />
+    <Content Include="CLIENT SIDE\SignIn.aspx" />
+    <Content Include="CLIENT SIDE\WebForm5.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLIENT SIDE\CLIENT.Master.cs">
+      <DependentUpon>CLIENT.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\CLIENT.Master.designer.cs">
+      <DependentUpon>CLIENT.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT SIDE\footer.aspx.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\footer.aspx.designer.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT SIDE\header.aspx.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\header.aspx.designer.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT SIDE\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT SIDE\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT SIDE\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT SIDE\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400.ttf" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400.woff" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400.woff2" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-brands-400d41d.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400.ttf" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400.woff" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400.woff2" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-regular-400d41d.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900.ttf" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900.woff" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900.woff2" />
+    <Content Include="CLIENT SIDE\SRC\fonts\fa-solid-900d41d.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticon.eot" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticon.ttf" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticon.woff" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticon.woff2" />
+    <Content Include="CLIENT SIDE\SRC\fonts\Flaticond41d.eot" />
+    <Content Include="CLIENT SIDE\CLIENT.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ADMIN SIDE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50503</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
