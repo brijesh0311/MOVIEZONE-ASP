@@ -30,11 +30,7 @@
                                             </div>
                                             <button class="btn" type="submit" name="submitt">SUBMIT</button><br><br>
                                             Create New Account &nbsp;
-                                            <a href="signin.php"><b><font size="3">Sign In</font></b></a>
-                                            <?php if (isset($_GET['error'])) { ?>
-                                                <p class="error"><?php echo $_GET['error']; ?></p>
-
-                                            <?php } ?>
+                                            <a href="SignIn.aspx"><b><font size="3">Sign In</font></b></a>
                                         </form>
                                     </div>
                                 </div>

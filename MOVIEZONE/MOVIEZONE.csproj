@@ -184,6 +184,14 @@
     <Content Include="CLIENT PANEL\SRC\js\vendor\jquery-3.6.0.min.js" />
     <Content Include="CLIENT PANEL\SRC\js\wow.min.js" />
     <Content Include="CLIENT PANEL\Login.aspx" />
+    <Content Include="CLIENT PANEL\SignIn.aspx" />
+    <Content Include="CLIENT PANEL\Home.aspx" />
+    <Content Include="CLIENT PANEL\Movies.aspx" />
+    <Content Include="CLIENT PANEL\Movies_Details.aspx" />
+    <Content Include="CLIENT PANEL\Series.aspx" />
+    <Content Include="CLIENT PANEL\Series_Details.aspx" />
+    <Content Include="CLIENT PANEL\Pricing.aspx" />
+    <Content Include="CLIENT PANEL\Contact_Us.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +208,62 @@
     </Compile>
     <Compile Include="CLIENT PANEL\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Movies.aspx.cs">
+      <DependentUpon>Movies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Movies.aspx.designer.cs">
+      <DependentUpon>Movies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Movies_Details.aspx.cs">
+      <DependentUpon>Movies_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Movies_Details.aspx.designer.cs">
+      <DependentUpon>Movies_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Series.aspx.cs">
+      <DependentUpon>Series.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Series.aspx.designer.cs">
+      <DependentUpon>Series.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Series_Details.aspx.cs">
+      <DependentUpon>Series_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Series_Details.aspx.designer.cs">
+      <DependentUpon>Series_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Pricing.aspx.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Pricing.aspx.designer.cs">
+      <DependentUpon>Pricing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Contact_Us.aspx.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLIENT PANEL\Contact_Us.aspx.designer.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
