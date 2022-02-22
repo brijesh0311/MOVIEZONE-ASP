@@ -252,8 +252,8 @@ label {
     user-select: none;
     -moz-user-select: none;
     background: #12151e none repeat scroll 0 0;
-    border: 2px solid #e4d804;
-    border-radius: 50px;
+    border: 2px solid #e4d804 !important;
+    border-radius: 50px !important;
     color: #e3dfdf;
     cursor: pointer;
     display: inline-block;

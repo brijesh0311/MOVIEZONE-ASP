@@ -3,7 +3,7 @@
 
     <!-- main-area -->
         <main>
-
+            
             <!-- breadcrumb-area -->
             
             <!-- breadcrumb-area-end -->
@@ -18,17 +18,21 @@
                                         <h5 class="title">Login</h5>
                                     </div>
                                     <div class="contact-form">
-                                        <form action="code.php" method="POST">
+                                        <%--<form action="code.php" method="POST">--%>
+                                        <form id="form1" runat="server">
                                             <div class="row">
                                                 <div class="col-md-7">
-                                                    <input type="text" placeholder="UserName *" name="usernamee">
+                                                    <%--<input type="text" placeholder="UserName *" name="usernamee">--%>
+                                                    <asp:TextBox ID="TextBox1" runat="server" placeholder="UserName *"></asp:TextBox>
                                                 </div>
                                                 <div class="col-md-7">
-                                                    <input type="password" placeholder="Password *" name="passwordd">
+                                                    <%--<input type="password" placeholder="Password *" name="passwordd">--%>
+                                                    <asp:TextBox ID="TextBox2" runat="server" placeholder="Password *" TextMode="Password"></asp:TextBox>
                                                 </div>
                                                 <br><br>                               
                                             </div>
-                                            <button class="btn" type="submit" name="submitt">SUBMIT</button><br><br>
+                                            <%--<button class="btn" type="submit" name="submitt">SUBMIT</button>--%><br><br>
+                                            <asp:Button ID="Button1" class="btn" type="submit" name="submitt"  runat="server" Text="Login"/><br /><br />
                                             Create New Account &nbsp;
                                             <a href="SignIn.aspx"><b><font size="3">Sign In</font></b></a>
                                         </form>

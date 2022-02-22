@@ -34,33 +34,41 @@
                                     <h5 class="title">Sign In</h5>
                                 </div>
                                 <div class="contact-form">
-                                    <form action="signin_code.php" method="POST">
+                                    <%--<form action="signin_code.php" method="POST">--%>
+                                    <form id="form1" runat="server">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="text" placeholder="First Name *" name="f_name">
+                                                <%--<input type="text" placeholder="First Name *" name="f_name">--%>
+                                                <asp:TextBox ID="TextBox1" runat="server" placeholder="First Name *"></asp:TextBox>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" placeholder="Last Name *" name="l_name">
+                                                <%--<input type="text" placeholder="Last Name *" name="l_name">--%>
+                                                <asp:TextBox ID="TextBox2" runat="server" placeholder="Last Name *"></asp:TextBox>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="text" placeholder="Email *" name="emaill">
+                                                <%--<input type="text" placeholder="Email *" name="emaill">--%>
+                                                <asp:TextBox ID="TextBox3" runat="server" placeholder="Email *"></asp:TextBox>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="text" placeholder="UserName *" name="usernamee">
+                                                <%--<input type="text" placeholder="UserName *" name="usernamee">--%>
+                                                <asp:TextBox ID="TextBox4" runat="server" placeholder="User Name *"></asp:TextBox>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="password" placeholder="Password *" name="passwordd">
+                                                <%--<input type="password" placeholder="Password *" name="passwordd">--%>
+                                                <asp:TextBox ID="TextBox5" runat="server" placeholder="Password *"></asp:TextBox>
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="password" placeholder="Confirm Password *" name="confirm_Passwordd">
+                                                <%--<input type="password" placeholder="Confirm Password *" name="confirm_Passwordd">--%>
+                                                <asp:TextBox ID="TextBox6" runat="server" placeholder="Confirm Password *"></asp:TextBox>
                                             </div>
                                         </div>
                                         
-                                        <button class="btn"  type="submit">Sign In</button>
+                                        <%--<button class="btn"  type="submit">Sign In</button>--%>
+                                        <asp:Button ID="Button1" runat="server" Text="Sign In" class="btn" OnClick="Button1_Click"/>
                                         <br><br>
                                         Already Have An Account &nbsp;
                                         <a href="Login.aspx"><b><font size="3">Login</b></font></a>
-                                    </form>
+                                        </form>
                                 </div>
                             </div>
                         </div>
