@@ -24,7 +24,32 @@ namespace MOVIEZONE.CLIENT_PANEL
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            if (IsValid)
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO[data] ([f_name], [l_name], [email], [username], [password]) VALUES(@f_name, @l_name, @email, @username, @password)", con);
+                cmd.Parameters.AddWithValue("@f_name", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@l_name", TextBox2.Text);
+                cmd.Parameters.AddWithValue("@email", TextBox3.Text);
+                cmd.Parameters.AddWithValue("@username", TextBox4.Text);
+                cmd.Parameters.AddWithValue("@password", TextBox5.Text);
+                con.Open();
+                int s = cmd.ExecuteNonQuery();
+                con.Close();
+                if (s == 1)
+                {
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                    TextBox3.Text = "";
+                    TextBox4.Text = "";
+                    TextBox5.Text = "";
+                    TextBox6.Text = "";
+                    Response.Redirect("~/CLIENT PANEL/Login.aspx");
+                }
+                else
+                {
+                    Literal1.Text = "Registred Failed  !  Please Sign In again.";
+                }
+            }
         }
     }
 }

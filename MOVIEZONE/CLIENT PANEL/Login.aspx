@@ -24,16 +24,26 @@
                                                 <div class="col-md-7">
                                                     <%--<input type="text" placeholder="UserName *" name="usernamee">--%>
                                                     <asp:TextBox ID="TextBox1" runat="server" placeholder="UserName *"></asp:TextBox>
+                                                    <br><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Username." ControlToValidate="TextBox1" Display="Dynamic" ForeColor="#CC0000" SetFocusOnError="True" Font-Size="Larger"></asp:RequiredFieldValidator>
                                                 </div>
+                                                <br>
+                                                
+                                                <br>
                                                 <div class="col-md-7">
                                                     <%--<input type="password" placeholder="Password *" name="passwordd">--%>
                                                     <asp:TextBox ID="TextBox2" runat="server" placeholder="Password *" TextMode="Password"></asp:TextBox>
+                                                    <br><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Password." ControlToValidate="TextBox2" Display="Dynamic" ForeColor="#CC0000" SetFocusOnError="True" Font-Size="Larger"></asp:RequiredFieldValidator>
                                                 </div>
-                                                <br><br>                               
+                                                <br>
+                                                    
+                                                <br>                               
                                             </div>
                                             <%--<button class="btn" type="submit" name="submitt">SUBMIT</button>--%><br><br>
-                                            <asp:Button ID="Button1" class="btn" type="submit" name="submitt"  runat="server" Text="Login"/><br /><br />
-                                            Create New Account &nbsp;
+                                            <asp:Button ID="Button1" class="btn" type="submit" name="submitt"  runat="server" Text="Login" OnClick="Button1_Click"/><br />
+                                            
+                                            <center><font color="red" size="4" ><asp:Literal ID="Literal1" runat="server"></asp:Literal></font></center><br>
+                                            
+                                            &nbsp;&nbsp;Create New Account &nbsp;
                                             <a href="SignIn.aspx"><b><font size="3">Sign In</font></b></a>
                                         </form>
                                     </div>
